@@ -48,7 +48,7 @@
     <script class="keep-theme-configurations">
     const KEEP = window.KEEP || {}
     KEEP.hexo_config = {"hostname":"coolcoldwind2025.github.io","root":"/","language":"en"}
-    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Ming's Blog","author":"邵明","avatar":"/images/avatar.png","logo":"/images/logo.png","favicon":"/favicon.png"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.png","description":"欢迎来到明叔的平行宇宙！","hitokoto":false},"social_contact":{"enable":true,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"39579245@qq.com"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":true,"reward":{"enable":true,"img_link":"/images/wechat.png","text":"感谢鼓励！","icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":false,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs","custom":{"enable":false,"url":null}},"pjax":{"enable":false},"footer":{"since":2026,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","search_db_path":"keep-search.json","source_data":{},"version":"4.3.0"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Ming's Blog","author":"邵明","avatar":"/images/avatar.png","logo":"/images/logo.png","favicon":"/favicon.png"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.png","description":"欢迎来到明叔的平行宇宙！","hitokoto":false},"social_contact":{"enable":true,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"39579245@qq.com"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":true,"reward":{"enable":true,"img_link":"/images/wechat.png","text":"感谢鼓励！","icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":"coolcoldwind2025/coolcoldwind2025.github.io","repo_id":"R_kgDOUBEdig","category":"Announcements","category_id":"DIC_kwDOUBEdis4DD_e_","reactions_enabled":true},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs","custom":{"enable":false,"url":null}},"pjax":{"enable":false},"footer":{"since":2026,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","search_db_path":"keep-search.json","source_data":{},"version":"4.3.0"}
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
     KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
     KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
@@ -142,9 +142,15 @@
                         </li>
                     
                     
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
                 <div class="icon-item menu-bar">
                     <div class="menu-bar-middle"></div>
@@ -246,16 +252,31 @@
             <!-- page content -->
             <div class="page-content border-box keep-markdown-body ">
                 
-                    <p>👋 你好，我是邵明，一个热爱技术分享的开发者。</p>
-<p>这里是我的个人博客，用来记录技术学习过程、日常思考和生活见闻。</p>
-<h3 id="我的技能栈"><a href="#我的技能栈" class="headerlink" title="我的技能栈"></a>我的技能栈</h3><ul>
-<li>前端开发：HTML&#x2F;CSS&#x2F;JavaScript、Vue、React</li>
-<li>后端开发：Python、Go</li>
-<li>其他：Hexo博客搭建、AI工具使用</li>
+                    <h1 id="我是一个什么样的人呢？"><a href="#我是一个什么样的人呢？" class="headerlink" title="我是一个什么样的人呢？"></a>我是一个什么样的人呢？</h1><p>👋 你好，我是邵明，一个擅长洞察问题根源的专业顾问。</p>
+<p>我的博客用来记录技术学习过程、日常思考和生活见闻，特色是：用平行宇宙和博弈理论贯穿始终。当然，许多经验之谈也许能够启发大家。</p>
+<h3 id="我的技能"><a href="#我的技能" class="headerlink" title="我的技能"></a>我的技能</h3><ul>
+<li>健康管理：为高端客户量身定制健康管理解决方案</li>
+<li>健康讲座：为企业或团体定制服务员工的健康讲座</li>
+<li>企业顾问：为从事健康的中小企业家提供专业咨询</li>
+<li>人生导师：为滚滚红尘中困惑的芸芸众生指点迷津</li>
+<li>其他：高级Excel数据处理、流程优化、客服管理等</li>
+</ul>
+<h3 id="我的资历"><a href="#我的资历" class="headerlink" title="我的资历"></a>我的资历</h3><ul>
+<li>曾任多家世界500强旗下健康公司的健康管理部经理</li>
+<li>曾任加拿大知名食疗瘦身公司大中华区首席瘦身顾问</li>
+<li>曾任大湾区医疗集团港澳居民服务中心客服经理</li>
+<li>健康领域全资质全经验：湖北医药学院临床医学和北京师范大学应用心理学双文凭、B超医师、国家高级健康管理师（三级）、国家高级营养师（三级）、国家高级心理咨询师（二级）、针灸理疗师等</li>
+</ul>
+<h3 id="我的才艺"><a href="#我的才艺" class="headerlink" title="我的才艺"></a>我的才艺</h3><ul>
+<li>羽毛球：在千人公司常年冠军，罗湖企业运动会男单16强</li>
+<li>流行歌手：曾在小型舞台表演和比赛</li>
+<li>普通话：一级，喜马拉雅认证“优质配音主播”，6部不知名作品</li>
+<li>AI应用：非IT出身，却擅长各种IT工具在具体工作中的应用，提升效率</li>
+<li>其他：除高空项目（跳伞等）外，基本尝试过所有兴趣爱好，如攀岩、射箭、斯诺克、卡丁车、滑板、滑雪、桨板等，大部分达到相当可观水平</li>
 </ul>
 <h3 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h3><ul>
-<li>GitHub: <a class="link"   target="_blank" rel="noopener" href="https://github.com/%E4%BD%A0%E7%9A%84ID" >https://github.com/你的ID<i class="fas fa-external-link-alt"></i></a></li>
-<li>邮箱: <a class="link"   href="mailto:&#x79;&#x6f;&#117;&#114;&#45;&#x65;&#x6d;&#x61;&#105;&#108;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#x6f;&#x6d;" >your-email@example.com<i class="fas fa-external-link-alt"></i></a></li>
+<li>微信: 13530301397</li>
+<li>邮箱: <a class="link"   href="mailto:&#51;&#x39;&#53;&#55;&#57;&#50;&#52;&#53;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;" >39579245@qq.com<i class="fas fa-external-link-alt"></i></a></li>
 </ul>
 
                 
@@ -371,6 +392,35 @@
 
     <!-- local search -->
     
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
 
     <!-- tablet toc -->
     
@@ -398,6 +448,10 @@
 
 
 <!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
 
 
 <!-- lazyload -->
