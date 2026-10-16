@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="邵明">
+    
+    <title>
+        
+            不擅长经营关系，如何做一个好的管理者？ |
+        
+        Ming&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/favicon.png">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script>
+        (function () {
+            let theme = localStorage.getItem('KEEP-THEME-STATUS');
+            let classname = "";
+            if (!theme || (JSON.parse(theme).isAutoTheme)){
+                classname = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark-mode" : "light-mode";
+            }
+            else{
+                classname = JSON.parse(theme).isDark ? "dark-mode" : "light-mode";
+            }
+            document.documentElement.classList.add(classname);
+        })();
+    </script>
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"coolcoldwind2025.github.io","root":"/","language":"en"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Ming's Blog","author":"邵明","avatar":"/images/avatar.png","logo":"/images/logo.png","favicon":"/favicon.png"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.png","description":"欢迎来到明叔的平行宇宙！","hitokoto":false},"social_contact":{"enable":true,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"39579245@qq.com"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":true,"reward":{"enable":true,"img_link":"/images/wechat.png","text":"感谢鼓励！","icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":"coolcoldwind2025/coolcoldwind2025.github.io","repo_id":"R_kgDOUBEdig","category":"Announcements","category_id":"DIC_kwDOUBEdis4DD_e_","reactions_enabled":true},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs","custom":{"enable":false,"url":null}},"pjax":{"enable":false},"footer":{"since":2026,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","search_db_path":"keep-search.json","source_data":{},"version":"4.3.0"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.png">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Ming&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                CATEGORIES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                ABOUT
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        不擅长经营关系，如何做一个好的管理者？
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/avatar.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">邵明</span>
+                                
+                                    <span class="author-badge">Lv3</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2026-10-16 10:00:00</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Fri Oct 16 2026 09:59:12 GMT+0800">2026-10-16 09:59:12</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E8%81%8C%E5%9C%BA/">职场</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E4%BA%BA%E9%99%85%E5%85%B3%E7%B3%BB/">人际关系</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%8D%87%E8%81%8C/">升职</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E9%AB%98%E7%AE%A1/">高管</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <p>相信很多职场的朋友都很想知道：怎样才能快速升职？为什么看似能力没你强的人却升职了？是不是一定要溜须拍马才能升职？</p>
+<p><font color="gree">近日，我非常深刻地自我反思了一下：为何我从中层迈向高层如此艰难？</font>从我的经历中，大家可以得到很多的启发。</p>
+<br>
+
+<h4 id="先从基层管理岗说起，就是主管、组长这类职位。"><a href="#先从基层管理岗说起，就是主管、组长这类职位。" class="headerlink" title="先从基层管理岗说起，就是主管、组长这类职位。"></a>先从基层管理岗说起，就是主管、组长这类职位。</h4><p>假设一下，如果你自己开了一个饭馆，招了很多服务员，一开始全部自己管，后面人越来越多，你管不过来了，于是，你想提拔一个主管帮你管，试想一下，你准备选一个什么样的人？</p>
+<p>这在心理学里，叫作“换位思考”。</p>
+<p>相信你对这个主管会有如下一些标准：</p>
+<p><strong>1、能准确上传下达老板的指定。</strong></p>
+<p>老板安排一个任务，他能听得懂，而且能迅速、准确地安排合适的人去做，而且知道怎么才算做好的标准，完成后会向老板及时汇报。</p>
+<p><strong>2、人品好，且必须是业务能手。</strong></p>
+<p>人品好、真诚待客、不偷奸耍滑、要勤快。不一定非得是第一名，但一定是前几名业务能力特别突出的人，希望关键时刻他自己就能顶上。</p>
+<p><strong>3、人缘好，有威望，关心下属。</strong></p>
+<p>下面的人愿意听他的工作安排，服他管，就需要他能做到公平公正、不偏不倚，在不损害老板利益的前提下能考虑到下属的需求。</p>
+<p>你觉得难吗？</p>
+<p>如果你是其中一个服务员，你想得到这个主管岗位，那么，你就得往上面这些标准上去靠，越接近，你成功的机率就越高。</p>
+<p>如果你什么都没想过，或者不愿意多做除本职工作外哪怕多一点点工作，踩点下班，甚至成天想着做一天和尚撞一天钟，得过且过，摸鱼混日，迟到早退，你觉得老板会选你当主管吗？不把你炒了就算老板仁慈的了。</p>
+<p>这就是“员工视角”和“老板视角”的差别和矛盾。</p>
+<p>明叔当年也没怎么想过，纯属埋头苦干、任劳任怨模式，再加上有一定专业基础，才被高管们慧眼识珠，获得了基础管理岗位，然后慢慢边干边学边摸索。</p>
+<p>其实做个小主管不太难，一般管个十来人，因为和其他基层员工差别也不大，自己也得干活，甚至干得还要比别人多一点，员工们也不会太挤兑，甚至多数主管会偏向于和员工抱成团来获取利益。</p>
+<p><font color="gree">一句话总结：主管是把事情做正确（Do things right）</font>，依靠的是个人执行力和直接监督。</p>
+<p>主管的核心困境在于：权力有限，但责任无限。因此，主管不能仅靠行政命令，而必须通过精妙的博弈策略来达成目标。</p>
+<p>主管的博弈论生存法则五大核心：</p>
+<p>1.对下：建立可信的奖惩机制，维持长期合作均衡。</p>
+<p>2.对上：利用信息透明和预期管理，解决信任危机。</p>
+<p>3.对旁：寻找共同利益点，将零和博弈转化为正和博弈。</p>
+<p>4.对内：打破大锅饭，让贡献可见，维护公平感。</p>
+<p>5.对己：克服短视本能，强制投资于长期能力建设。</p>
+<p>主管不是靠“权力”管人，而是靠设计一套让所有人都觉得“合作比背叛更划算”的博弈规则来管理团队。</p>
+<br>
+
+<h4 id="接下来是中层管理岗位，就是主任、经理这类岗位。"><a href="#接下来是中层管理岗位，就是主任、经理这类岗位。" class="headerlink" title="接下来是中层管理岗位，就是主任、经理这类岗位。"></a>接下来是中层管理岗位，就是主任、经理这类岗位。</h4><p>明叔做得比较久的也是这一类岗位，通常这类岗位会被干中层的朋友们戏称为“夹心饼干”——容易两头受气，费力不讨好。</p>
+<p>假设你的饭馆做大了，开连锁店了，你的公司就要成立：财务、销售、后勤、人事、客服等多个部门了。各个部门就会有部门经理这个角色了，包括连锁店的店长也算。</p>
+<p>这个时候选经理级别的人，一般对正规公司来说，就不是老板单个人简单一句话决定了，通常得走招聘或竞聘的流程，再进行面试、考核、复试等多个环节，最后才是上岗和试用期。</p>
+<p>假设我们是走内部竞聘的流程，由下面的主管去竞聘经理，你觉得什么样的人才能当经理呢？</p>
+<p>你在招聘网站上去搜一下，就会发现经理需要如下能力模型（包括主管能力）：</p>
+<p><strong>1、系统构建能力</strong></p>
+<p>主管着眼的就是手头上这摊子事儿，带领大家干好干完就结了。而经理要完成的任务可就多了很多了，目标分解、资源整合、制度设计、绩效管理、团队建设等等。</p>
+<p>主管主要思考：如何把事做对？而经理则需思考：为什么要做这件事？如何配置资源为最优？二者最简单的差别举例说明：主管希望干活的人越多越好，而经理则希望创造条件让每个人的工作能力上限不断提升。</p>
+<p><strong>2、横向整合与向上管理能力</strong></p>
+<p>当主管基本上只需要和下属员工与上司或老板打交道，特殊行业可能还需要和客户打交道，但基本上是流程化的，但是，当经理，还要和其他部门打交道，争取资源、消除摩擦等。还可能要管理大客户，甚至要处理客户投诉等极端情况。</p>
+<p>另外，还必须学会向上管理，以便争取上司的支持，进行预期管理，同时要有大局观和懂得利益平衡。</p>
+<p>经理比之主管最大的差别在于：需要站在公司层面思考问题，而不仅仅是本部门或小团队的利益。</p>
+<p>为什么说经理最容易变成“夹心饼干”？</p>
+<p>因为上面高层会批评经理说：你要站在公司层面看问题，不能只考虑你自己的部门。而下面的主管和员工会指责经理说：你是我们的头儿，怎么能不考虑我们的利益，让我们干原本不该我们的干的活儿呢？</p>
+<p>经理的核心困境在于：拥有一定的资源分配权，但面临多重目标的冲突。你不再仅仅关注单点的任务完成，而是关注整个团队的产出效率、人才密度以及与其他部门的协作边界。</p>
+<p>经理的博弈论生存法则五大核心：</p>
+<p>1.对上：管理预期，展示战略对齐，避免信息黑洞。<br>2.对下：设计公平的锦标赛机制，绑定团队利益，防止内耗。<br>3.对旁：寻找共同利益，积累互惠信用，用制度固化合作。<br>4.对人：定制化激励，增加核心人才的转换成本。<br>5.对己：平衡短期产出与长期探索，理性止损。</p>
+<p><font color="gree">一句话总结：经理是做正确的事情（Do the right things）</font>，依靠的是判断力、资源整合力和机制设计力。</p>
+<br>
+
+<h4 id="最后讲讲高管层岗位，就是总监这类岗位。"><a href="#最后讲讲高管层岗位，就是总监这类岗位。" class="headerlink" title="最后讲讲高管层岗位，就是总监这类岗位。"></a>最后讲讲高管层岗位，就是总监这类岗位。</h4><p>明叔几度获得总监岗位机会，又主动放弃，虽然我曾很努力地学习和融入，但最终我发现：这种岗位和我想要的、想做的并不符合，因此，就主动放弃了。</p>
+<p>一个好的总监需要如下能力模型：</p>
+<p><strong>１、战略视角、制定目标。</strong></p>
+<p><strong>２、设计组织架构与文化。</strong></p>
+<p><strong>３、资源的操盘手。</strong></p>
+<p>具体我不一一展开了，但大家明显会发现：主管偏向于做事，经理在做事与和人打交道之间，而总监则几乎全面转向与人或钱打交道。主管博弈的是“任务”，经理博弈的是“人”，而总监博弈的是**“局势”和“不确定性”**。</p>
+<p>总监的博弈论生存法则五大核心：</p>
+<p>1.对上：用小胜积累信任，用财务语言对齐目标，管理预期。</p>
+<p>2.对旁：构建联盟，明确边界，避免零和内耗，追求全局最优。</p>
+<p>3.对外：建立可信威慑，利用信息优势，动态调整战略。</p>
+<p>4.对下：通过关键少数撬动文化变革，打破旧均衡，建立新规范。</p>
+<p>5.对己：平衡平台依赖与个人品牌，保持随时可离开的底气（这也是最好的忠诚）。</p>
+<p><font color="gree">一句话总结：总监是正确地做事情（Do the right things with Effectiveness &amp; Strategy)</font>，依靠的是高超的战略思维、战略规划、市场洞察、商业敏锐度、谈判能力、政治智慧、财务建模、ROI（投资回报率）分析和汇报能力。</p>
+<br>
+
+
+
+<p>我非常清楚总监要干些什么，但我自己也有非常清晰的职业规划：健康管理，而且是偏专业方向的。当经理时，与人打交道的种种已经让我感受到很多的不适与疲惫感。</p>
+<p>而且我非常注重细节、热衷专业知识、对钱不敏感（缺乏商业敏感度）、不敢或不会做“坏人”、不喜欢“不确定性”等，这些都是拦在我升任总监路上的拦路虎，而且最重要的是：我并不希望做出改变。</p>
+<p>我有一位贵人上司，升任公司副总之后，非常希望将我提拔到总监的位置，我心存感激，也很努力尝试过改变自己，但最终还是在复杂的人际关系中败下阵来，于是我主动放弃了。</p>
+<br>
+
+
+
+<p>我为此进行了非常深刻的反思：<font color="red">为什么我觉得自己在所有的人际关系中都不擅长？</font>无论是客户、上司、下属、伙伴甚至家人。</p>
+<p>那位副总曾经问我一个问题：你在公司有朋友吗？你了解他吗？我无话可说。我曾反思过自己是不是一个极度自私的人，可最终也否定了，我对人友善，对他人的感受也在意，只是缺乏表达的通道。因为真正自私的人，通常不会反思自己是否自私。</p>
+<p>我可能在潜意识里认为“亲密关系是危险的”或“依赖他人是软弱的”。因此，保持距离不是为了伤害别人，而是为了自我保护，其内核是恐惧而非贪婪。</p>
+<p>另外，我的大脑可能更擅长处理逻辑、数据、事实（系统2思维），而在处理情绪、潜台词、关系动态（系统1直觉）时感到吃力。 结果就是：在旁人看来，我显得“冷硬”或“无趣”，但实际上我只是在用处理工作的方式处理关系，导致错位。所以，当副总说公司有很多人向老板告我的状时，我非常吃惊：我认真做事、诚恳待人，换来的就是这个？！</p>
+<p>也有可能我从小没有观察到良好的关系互动模型，印象里倒是母亲特别会吵架，在成长环境中情感表达时常被抑制。</p>
+<p>我内向、高度敏感，社交对我来说是一种高耗能活动。我内心并非不想经营，只是感到能量余额不足。当我对客户、同事消耗了大量精力去“表演”后，回到家对家人朋友就没有剩余能量去维护关系了。这看起来像“对外人好，对家人坏”，其实是能量枯竭了。</p>
+<p>我就像是一个手里只有“锤子”（逻辑&#x2F;做事）的人，看所有关系问题都像钉子，试图用讲道理、给方案来解决需要情感共鸣的问题，结果自然处处碰壁。</p>
+<p>我可能采取了**“<font color="yellow">最小化交易成本</font>”**的策略——即只进行必要的信息交换，不进行额外的“情绪润滑”或“人情储蓄”。 短期看：这很高效，显得“公事公办”。但长期看：在需要非正式合作、危机互助或隐性资源共享时，我会因为缺乏“社会资本”而处于劣势，就像副总说的我没朋友、被众人投诉等等。</p>
+<p>我不会试图变成那种八面玲珑的人，也做不到。我仍会坚持发挥我的长处：靠谱、专业、言出必行、逻辑清晰。建立“可预测的信任”：即使我不善言辞，但我事事有回应、件件有着落，我相信依然会有人信任我。就像那位副总私下总对我说：我适合作朋友，不适合做管理。</p>
+<br>
+
+
+
+<p><font color="red">信任有两种：情感信任（喜欢和我聊天）和能力信任（放心把事交给我）。</font> 我决定深耕后者。</p>
+<p>目前我正受到这样的信任，在我一位学生的健康管理公司担任专业顾问。虽然钱不多，职位也不高，但内心莫名地平静与安详，可能因为我找到了最适合自己的位置。</p>
+<br>
+
+
+
+<p>但是，虽然我放弃了高管追求，只是因为我志不在管理，并不意味着你不行。如果你愿意与人打交道，但不愿成为“虚伪的人”，还能做高层吗？ 能，而且可能成为更稀缺、更受尊重的高层。</p>
+<p>现代组织越来越需要**“<font color="yellow">真诚型领导</font>”**。</p>
+<p>这类领导者的特点是： </p>
+<p>1.自我觉察：清楚自己的价值观和局限。  </p>
+<p>2.透明化：在适当范围内分享真实想法和信息。 </p>
+<p>3.道德导向：坚持原则，不因短期利益牺牲长远信任。 </p>
+<p>4.平衡处理：既能听取不同意见，又能做出果断决策。</p>
+<p>你的优势： </p>
+<p>• 信任成本低：因为你不玩弄权术，下属和合作伙伴知道你的底线和预期，沟通效率极高。</p>
+<p>• 决策质量高：你更关注事实和问题本身，而不是谁的面子或谁的派系。 </p>
+<p>• 吸引同类人才：优秀的人才往往也厌恶办公室政治，他们会聚集在你身边。</p>
+<p>你的挑战： </p>
+<p>• 需要升级“社交操作系统”：从“直来直去”升级为“有温度的坚定”。 </p>
+<p>• 需要建立“保护性机制”：既然你不擅长政治斗争，就需要依靠制度、数据和业绩来说话，让规则成为你的护城河。</p>
+<br>
+
+
+
+<p><font color="gree">以下几点你需要特别注意</font>：</p>
+<p>1.不要把“控制情绪”、“斟酌措辞”看作虚伪，而看作对他人的尊重和对目标的负责。</p>
+<p>2.并非所有公司都推崇“厚黑学”，进入那些技术驱动型、初创型、专业服务型公司，往往更看重专业能力、结果导向和透明度。避免进入那些高度依赖政府关系、垄断资源、内部派系林立的传统大型国企或家族企业（除非你有极强的政治盟友）。</p>
+<p>3.多观察那些你尊敬的、既成功又正派的高层，看他们如何处理棘手的人际关系。你会发现，他们靠的不是欺骗，而是倾听、共情和利益整合。</p>
+<p>4.做一个正直的高层，可能会让你在某些圈子里显得“格格不入”。 你需要接受：你可能不会有那么多“酒肉朋友”或“利益同盟”，但你会拥有少数几个深度信任的伙伴和广泛的职业声誉。</p>
+<p>5.当你遇到“虚伪”的人，不要急于道德审判，试着分析：他为什么这么做？他的压力来源是什么？他的KPI是什么？这种认知共情能帮你减少厌恶感，转而将其视为一个需要解决的“系统问题”。</p>
+<br>
+
+
+
+<p>希望我没做成的总监，你们都能做成！</p>
+<p>至于什么总经理或CEO，这些我没有实际经验，就不纸上谈兵了，等大家到了总监那个位置再去慢慢琢磨吧。</p>
+<p>希望通过我个人的经历，能带给大家更多的启发，让大家明确自己的需求、能力边界，通过不断努力学习成长，成功获得你想要的主管、经理、总监的职位。</p>
+<br>
+
+<p><strong>【今日互动】</strong></p>
+<p>你现在是什么职位？在晋升更高级职位时是否有瓶颈？你觉得是在博弈论生存法则哪个核心上出现问题？欢迎评论区聊聊。</p>
+<p>关注我，学习<font color="gree">「阴阳博弈论」</font>，让我们用博弈的眼光看身体，用谈判的智慧过生活。</p>
+<br>
+
+<p>希望你会喜欢，欢迎打赏鼓励。</p>
+<p>不喜欢就划走，缘起缘灭，道法自然。</p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E4%BA%BA%E9%99%85%E5%85%B3%E7%B3%BB/">人际关系</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%8D%87%E8%81%8C/">升职</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E9%AB%98%E7%AE%A1/">高管</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="Share to WeChat"
+            data-tooltip-img-tip="Scan by WeChat"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to WeiBo"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
+
+                        
+                    </div>
+                </div>
+
+                
+                    
+
+<div class="reward-author-container border-box flex-center">
+    <div class="reward-btn border-box flex-center tooltip tooltip-img"
+            data-tooltip-img-url="/images/wechat.png"
+            data-tooltip-img-trigger="click"
+            data-tooltip-img-style="top: -6px;"
+    >
+        <i class="fa-solid fa-gift"></i>&nbsp;感谢鼓励！
+    </div>
+</div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2026/10/12/15/"
+                                   title="你的体重不是数字，是你和身体谈判的结果"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">你的体重不是数字，是你和身体谈判的结果</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="giscus-comments-container">
+        <div class="giscus" id="giscus"></div>
+        <script 
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          if (!window.KeepCommentPlugin?.getGiscusTheme) {
+            window.KeepCommentPlugin.getGiscusTheme = () => {
+              return document.documentElement.classList.contains('dark-mode') ? 'dark_dimmed' : 'light_tritanopia'
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.changeGiscusTheme) {
+            window.KeepCommentPlugin.changeGiscusTheme = () => {
+              const iframe = document.querySelector('iframe.giscus-frame')
+              iframe && iframe.contentWindow.postMessage({
+                giscus: {
+                  setConfig: {
+                    theme: window.KeepCommentPlugin.getGiscusTheme()
+                  }
+                }
+              }, 'https://giscus.app')
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.initGiscus) {
+            window.KeepCommentPlugin.initGiscus = () => {
+              const script = document.createElement('script')
+              script.async = true
+              script.src = 'https://giscus.app/client.js'
+              script.setAttribute('data-repo', 'coolcoldwind2025/coolcoldwind2025.github.io')
+              script.setAttribute('data-repo-id', 'R_kgDOUBEdig')
+              script.setAttribute('data-category', 'Announcements')
+              script.setAttribute('data-category-id', 'DIC_kwDOUBEdis4DD_e_')
+              script.setAttribute('data-reactions-enabled', '1')
+              script.setAttribute('data-lang', 'en')
+              script.setAttribute('data-mapping', 'pathname')
+              script.setAttribute('data-strict', '0')
+              script.setAttribute('data-emit-metadata', '0')
+              script.setAttribute('data-input-position', 'top')
+              script.setAttribute('crossorigin', 'anonymous')
+              script.setAttribute('loading', 'lazy')
+              script.setAttribute('data-theme', window.KeepCommentPlugin.getGiscusTheme())
+              document.querySelector('.giscus-comments-container').appendChild(script)
+              script.onerror = () => {
+                window.KeepCommentPlugin.loadFailHandle()
+              }
+              script.onload = () => {
+                window.KeepCommentPlugin.hideLoading()
+              }
+              const toggleThemeBtn = document.querySelector('.tool-toggle-theme-mode')
+              toggleThemeBtn && toggleThemeBtn.addEventListener('click', () => {
+                window.KeepCommentPlugin.changeGiscusTheme()
+              })
+            }
+          }
+
+          if ('false' === "true") {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGiscus()
+            }, 1000)
+          } else {
+            window.addEventListener("DOMContentLoaded", window.KeepCommentPlugin.initGiscus)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2026
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">邵明</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+            
+<script src="/js/post/share.js"></script>
+
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
