@@ -1,379 +1,218 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Hexo Theme Keep">
-    <meta name="description" content="Hexo Theme Keep">
-    <meta name="author" content="Benjamin Shao">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>用博弈论分析顶尖运动员个个伤病的原因 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="这是一个有趣视角。我不讲运动的标准动作，不讲什么危险动作会导致损伤，而是将运动受伤看作你的身体、欲望以及组织之间博弈的结果。  有没有发现一个规律：没有任何一个激烈对抗项目的运动员不是一身伤病！而且，越是顶尖选手，这个问题越严重。 从博弈论的角度来看，“顶尖运动员伤病更严重”并非偶然，而是个体在高风险、高回报、强竞争环境下做出的理性策略选择的结果。 一、几个经典的博弈场景：1、囚徒困境与军备竞赛在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用博弈论分析顶尖运动员个个伤病的原因">
+<meta property="og:url" content="https://benjaminshao.com/2026/10/01/13/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="这是一个有趣视角。我不讲运动的标准动作，不讲什么危险动作会导致损伤，而是将运动受伤看作你的身体、欲望以及组织之间博弈的结果。  有没有发现一个规律：没有任何一个激烈对抗项目的运动员不是一身伤病！而且，越是顶尖选手，这个问题越严重。 从博弈论的角度来看，“顶尖运动员伤病更严重”并非偶然，而是个体在高风险、高回报、强竞争环境下做出的理性策略选择的结果。 一、几个经典的博弈场景：1、囚徒困境与军备竞赛在">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://benjaminshao.com/img/butterfly-icon.png">
+<meta property="article:published_time" content="2026-10-01T02:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-30T07:44:37.542Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="运动">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://benjaminshao.com/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "用博弈论分析顶尖运动员个个伤病的原因",
+  "url": "https://benjaminshao.com/2026/10/01/13/",
+  "image": "https://benjaminshao.com/img/butterfly-icon.png",
+  "datePublished": "2026-10-01T02:00:00.000Z",
+  "dateModified": "2026-10-30T07:44:37.542Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "John Doe",
+      "url": "https://benjaminshao.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://benjaminshao.com/2026/10/01/13/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        const data = { value }
+
+        if (ttl != null) {
+          data.expiry = Date.now() + ttl * 86400000
+        }
+
+        localStorage.setItem(key, JSON.stringify(data))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
     
-    <title>
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
         
-            用博弈论分析顶尖运动员个个伤病的原因 |
-        
-        Benjamin&#39;s Blog
-    </title>
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
     
-<link rel="stylesheet" href="/css/style.css">
-
-    
-        <link rel="shortcut icon" href="/images/favicon.png">
-    
-    
-<link rel="stylesheet" href="/font/css/fontawesome.min.css">
-
-    
-<link rel="stylesheet" href="/font/css/regular.min.css">
-
-    
-<link rel="stylesheet" href="/font/css/solid.min.css">
-
-    
-<link rel="stylesheet" href="/font/css/brands.min.css">
-
-    
-    <script>
-        (function () {
-            let theme = localStorage.getItem('KEEP-THEME-STATUS');
-            let classname = "";
-            if (!theme || (JSON.parse(theme).isAutoTheme)){
-                classname = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark-mode" : "light-mode";
-            }
-            else{
-                classname = JSON.parse(theme).isDark ? "dark-mode" : "light-mode";
-            }
-            document.documentElement.classList.add(classname);
-        })();
-    </script>
-    <script class="keep-theme-configurations">
-    const KEEP = window.KEEP || {}
-    KEEP.hexo_config = {"hostname":"benjaminshao.com","root":"/","language":"zh-CN"}
-    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Benjamin's Blog","author":"Benjamin Shao","avatar":"/images/avatar.png","logo":"/images/logo.png","favicon":"/images/favicon.png"},"menu":{"home":"/                        || fa-solid fa-home","archives":"/archives        || fa-solid fa-box-archive","tags":"/tags                    || fa-solid fa-tags","categories":"/categories   || fa-solid fa-layer-group","about":"/about                || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.png","description":"欢迎来到本杰明的平行宇宙！||Welcome to Benjamin's parallel universe!","hitokoto":false},"social_contact":{"enable":true,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"39579245@qq.com"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":"这是新增的网站公告功能...","category":true,"tag":true,"post_datetime":"updated | created"},"post":{"author_badge":{"enable":true,"level_badge":false,"custom_badge":"健康专业顾问"},"word_count":{"wordcount":true,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":true,"reward":{"enable":true,"img_link":"/images/wx&zfb.png","text":"请作者喝杯咖啡！","icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":"coolcoldwind2025/coolcoldwind2025.github.io","repo_id":"R_kgDOUBEdig","category":"Announcements","category_id":"DIC_kwDOUBEdis4DD_e_","reactions_enabled":true},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs","custom":{"enable":false,"url":null}},"pjax":{"enable":false},"footer":{"since":2026,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","search_db_path":"keep-search.json","source_data":{},"version":"4.3.0"}
-    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
-    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
-    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
-  </script>
-<meta name="generator" content="Hexo 8.1.2"></head>
-
-
-<body>
-<div class="progress-bar-container">
-    
-
-    
-</div>
-
-
-
-<main class="page-container border-box">
-    <!-- home first screen  -->
-    
-
-    <!-- page content -->
-    <div class="page-main-content border-box">
-        <div class="page-main-content-top">
-            
-<header class="header-wrapper">
-
-    <div class="border-box header-content">
-        <div class="left flex-start border-box">
-            
-                <a class="logo-image border-box" href="/">
-                    <img src="/images/logo.png">
-                </a>
-            
-            <a class="site-name border-box" href="/">
-               Benjamin&#39;s Blog
-            </a>
-        </div>
-
-        <div class="right border-box">
-            <div class="pc border-box">
-                <ul class="menu-list border-box">
-                    
-                        
-                        <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="/">
-                                
-                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
-                                
-                                首页
-                                
-                            </a>
-                            
-                        </li>
-                    
-                        
-                        <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="/archives">
-                                
-                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
-                                
-                                归档
-                                
-                            </a>
-                            
-                        </li>
-                    
-                        
-                        <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="/tags">
-                                
-                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
-                                
-                                标签
-                                
-                            </a>
-                            
-                        </li>
-                    
-                        
-                        <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="/categories">
-                                
-                                    <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
-                                
-                                分类
-                                
-                            </a>
-                            
-                        </li>
-                    
-                        
-                        <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="/about">
-                                
-                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
-                                
-                                关于
-                                
-                            </a>
-                            
-                        </li>
-                    
-                    
-                        <li class="menu-item search search-popup-trigger">
-                            <i class="menu-text-color fas search fa-search"></i>
-                        </li>
-                    
-                </ul>
-            </div>
-            <div class="mobile border-box flex-start">
-                
-                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
-                
-                <div class="icon-item menu-bar">
-                    <div class="menu-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-drawer">
-        <ul class="drawer-menu-list border-box">
-            
-                
-                <li class="drawer-menu-item border-box not-sub-menu">
-                    <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
-                            
-                                <span class="menu-icon-wrap border-box flex-center">
-                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
-                                </span>
-                            
-                            首页
-                        </a>
-                        
-                    </label>
-                    
-                </li>
-            
-                
-                <li class="drawer-menu-item border-box not-sub-menu">
-                    <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
-                            
-                                <span class="menu-icon-wrap border-box flex-center">
-                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
-                                </span>
-                            
-                            归档
-                        </a>
-                        
-                    </label>
-                    
-                </li>
-            
-                
-                <li class="drawer-menu-item border-box not-sub-menu">
-                    <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
-                            
-                                <span class="menu-icon-wrap border-box flex-center">
-                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
-                                </span>
-                            
-                            标签
-                        </a>
-                        
-                    </label>
-                    
-                </li>
-            
-                
-                <li class="drawer-menu-item border-box not-sub-menu">
-                    <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
-                            
-                                <span class="menu-icon-wrap border-box flex-center">
-                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
-                                </span>
-                            
-                            分类
-                        </a>
-                        
-                    </label>
-                    
-                </li>
-            
-                
-                <li class="drawer-menu-item border-box not-sub-menu">
-                    <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
-                            
-                                <span class="menu-icon-wrap border-box flex-center">
-                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
-                                </span>
-                            
-                            关于
-                        </a>
-                        
-                    </label>
-                    
-                </li>
-            
-        </ul>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-        </div>
-
-        <div class="page-main-content-middle border-box">
-
-            <div class="main-content border-box">
-                
-
-                    
-<div class="fade-in-down-animation">
-    <div class="post-page-container border-box">
-        <div class="post-content-container border-box">
-            
-
-            <div class="post-content-bottom border-box">
-                
-                    <div class="post-title">
-                        用博弈论分析顶尖运动员个个伤病的原因
-                    </div>
-                
-
-                
-                    <div class="post-header border-box">
-                        
-                            <div class="avatar-box border-box">
-                                <img src="/images/avatar.png">
-                            </div>
-                        
-                        <div class="info-box">
-                            <div class="author border-box">
-                                <span class="name">Benjamin Shao</span>
-                                
-                                    <span class="author-badge">健康专业顾问</span>
-                                
-                            </div>
-                            <div class="meta-info border-box">
-                                
-
-<div class="post-meta-info-container border-box post">
-    <div class="post-meta-info border-box">
-        
-
-        
-            <span class="meta-info-item post-create-date">
-                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2026-10-01 10:00:00</span>
-            </span>
-
-            
-                <span class="meta-info-item post-update-date">
-                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Tue Oct 27 2026 17:56:06 GMT+0800">2026-10-27 17:56:06</span>
-                </span>
-            
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/%E5%81%A5%E5%BA%B7/">健康</a></li>
-                        
-                    
-                            <li class="category-item">&nbsp;<i class="icon fas fa-angle-right"></i>&nbsp;<a href="/categories/%E5%81%A5%E5%BA%B7/%E7%BE%BD%E6%AF%9B%E7%90%83/">羽毛球</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E8%BF%90%E5%8A%A8/">运动</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-        
-        
-        
-            <span class="meta-info-item post-pv">
-                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
-            </span>
-        
-    </div>
-
-    
-</div>
-
-                            </div>
-                        </div>
-                    </div>
-                
-
-                <div class="post-content keep-markdown-body ">
-                    
-
-                    
-                         <p><em>这是一个有趣视角。我不讲运动的标准动作，不讲什么危险动作会导致损伤，而是将运动受伤看作你的身体、欲望以及组织之间博弈的结果。</em></p>
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '用博弈论分析顶尖运动员个个伤病的原因',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.2"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hexo</span></a><a class="nav-page-title" href="/"><span class="site-name">用博弈论分析顶尖运动员个个伤病的原因</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">用博弈论分析顶尖运动员个个伤病的原因</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-10-01T02:00:00.000Z" title="发表于 2026-10-01 10:00:00">2026-10-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-10-30T07:44:37.542Z" title="更新于 2026-10-30 15:44:37">2026-10-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%81%A5%E5%BA%B7/">健康</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%81%A5%E5%BA%B7/%E7%BE%BD%E6%AF%9B%E7%90%83/">羽毛球</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p><em>这是一个有趣视角。我不讲运动的标准动作，不讲什么危险动作会导致损伤，而是将运动受伤看作你的身体、欲望以及组织之间博弈的结果。</em></p>
 <hr>
 <p>有没有发现一个规律：没有任何一个激烈对抗项目的运动员不是一身伤病！而且，越是顶尖选手，这个问题越严重。</p>
-<p>从博弈论的角度来看，<font color="green">“顶尖运动员伤病更严重”并非偶然，而是个体在高风险、高回报、强竞争环境下做出的理性策略选择的结果。</font><br><br></p>
-<h4 id="一、几个经典的博弈场景："><a href="#一、几个经典的博弈场景：" class="headerlink" title="一、几个经典的博弈场景："></a>一、几个经典的博弈场景：</h4><h6 id="1、囚徒困境与军备竞赛"><a href="#1、囚徒困境与军备竞赛" class="headerlink" title="1、囚徒困境与军备竞赛"></a>1、囚徒困境与军备竞赛</h6><p>在顶级竞技体育中，冠军只有一个，参赛运动员之间处于或接近零和的博弈的状态。每个运动员都有两个策略可选：</p>
+<p>从博弈论的角度来看，<font color="orange">“顶尖运动员伤病更严重”并非偶然，而是个体在高风险、高回报、强竞争环境下做出的理性策略选择的结果。</font><br><br></p>
+<h4 id="一、几个经典的博弈场景："><a href="#一、几个经典的博弈场景：" class="headerlink" title="一、几个经典的博弈场景："></a>一、几个经典的博弈场景：</h4><h6 id="1、囚徒困境与军备竞赛"><a href="#1、囚徒困境与军备竞赛" class="headerlink" title="1、囚徒困境与军备竞赛"></a><font color="red">1、囚徒困境与军备竞赛</font></h6><p>在顶级竞技体育中，冠军只有一个，参赛运动员之间处于或接近零和的博弈的状态。每个运动员都有两个策略可选：</p>
 <p>——“保守训练&#x2F;比赛”（低伤病风险，但可能失去竞争优势），</p>
 <p>——“极限压榨身体”（高伤病风险，但可能获得金钱&#x2F;荣誉）。</p>
-<p>依据纳什均衡原则：</p>
+<p>依据<font color="red">纳什均衡</font>原则：</p>
 <p>如果所有人都保守，大家都能健康地享受运动，但这在顶级赛场根本不可能存在。因为只要一个人选择“极限压榨”，他就能获得巨大的边际收益（冠军、代言、历史地位）。为了不被淘汰，其他人被迫跟进。</p>
 <p>最终结果就是：所有顶尖运动员都陷入了“极限压榨”的纳什均衡。虽然每个人的伤病风险都大幅上升，但谁也不敢先退回到“保守策略”，因为那意味着自动退出顶尖行列。</p>
 <p>这是一种集体非最优但个体理性的局面。就像核军备竞赛一样，没有任何一个有核国家会主动销毁自己的核武器。</p>
-<h6 id="2、委托-代理的利益偏差"><a href="#2、委托-代理的利益偏差" class="headerlink" title="2、委托-代理的利益偏差"></a>2、委托-代理的利益偏差</h6><p><font color="green">天下熙熙，皆为利来；天下攘攘，皆为利往。 </font></p>
+<h6 id="2、委托-代理的利益偏差"><a href="#2、委托-代理的利益偏差" class="headerlink" title="2、委托-代理的利益偏差"></a><font color="red">2、委托-代理的利益偏差</font></h6><p><font color="orange">天下熙熙，皆为利来；天下攘攘，皆为利往。 </font></p>
 <p>运动员（代理人）与俱乐部&#x2F;国家队&#x2F;赞助商（委托人）之间的利益并不完全一致。</p>
 <ul>
 <li>信息不对称：</li>
@@ -391,8 +230,8 @@
 <p>——委托人也会通过合同条款（如出场费挂钩、绩效奖金）诱导或强迫运动员冒险。</p>
 <p>——现在顶级赛事的密度越来越高，不参赛就扣分罚款，顶尖选手根本没有喘息的机会，身体根本没有恢复时间。</p>
 <p>最终结果就是：在职业生涯的黄金期，运动员倾向于过度折现未来健康以换取当前收益，导致伤病积累。</p>
-<p>这听起来，怎么那么像我们职场所说的<font color="red">年轻时“拿身体赚钱”“以命换钱”，年老后“拿钱买命”</font>的概念，其实就是一回事，运动场也是职场。</p>
-<h6 id="3、信号博弈"><a href="#3、信号博弈" class="headerlink" title="3、信号博弈"></a>3、信号博弈</h6><p>伤病管理也是一种向市场发送“信号”的过程。 </p>
+<p>这听起来，怎么那么像我们职场所说的<font color="orange">年轻时“拿身体赚钱”“以命换钱”，年老后“拿钱买命”</font>的概念，其实就是一回事，运动场也是职场。</p>
+<h6 id="3、信号博弈"><a href="#3、信号博弈" class="headerlink" title="3、信号博弈"></a><font color="red">3、信号博弈</font></h6><p>伤病管理也是一种向市场发送“信号”的过程。 </p>
 <ul>
 <li>高强度训练的信号价值：</li>
 </ul>
@@ -405,16 +244,16 @@
 <p>——运动员被灌输“为国争光”“集体荣誉”“胜利优先”“光宗耀祖”的思想，“带伤坚持”长期被视作拼搏精神的体现，很多运动员为了不耽误重要赛事，会选择打封闭针、吃止疼药强行上场。 </p>
 <p>除此之外，运动员们还存在逆向选择的风险：</p>
 <p>如果运动员过于注重保养而频繁轮休，可能被市场解读为“缺乏斗志”或“玻璃人”，从而在未来的博弈（谈判&#x2F;商业代言竞争）中处于劣势。因此，即使知道会加重伤病，运动员也可能选择发出“硬汉”信号。 </p>
-<h6 id="4、边际效用递减与风险偏好"><a href="#4、边际效用递减与风险偏好" class="headerlink" title="4、边际效用递减与风险偏好"></a>4、边际效用递减与风险偏好</h6><p><font color="red">人为财死，鸟为食亡。</font></p>
+<h6 id="4、边际效用递减与风险偏好"><a href="#4、边际效用递减与风险偏好" class="headerlink" title="4、边际效用递减与风险偏好"></a><font color="red">4、边际效用递减与风险偏好</font></h6><p><font color="orange">人为财死，鸟为食亡。</font></p>
 <p>各行各业的金字塔顶端的收益无疑是最高的，比如在直播行业，只有董宇辉、李佳琦、辛有志这些头部主播赚得盆满钵满，而绝大多数普通主播都只是在为三顿饭钱奔波忙碌而已。</p>
 <p>运动行业也是一样，顶级赢家边际收益极高。</p>
 <p>对于普通运动员，从第90名提升到第80名，收益增加非常有限；但对于顶尖运动员，哪怕从世界第2提升到世界第1，收益也是指数级增长的。</p>
 <p>比如，林丹杯奖金冠军20万 vs 亚军7万的天壤之别。而且在荣誉方面，人们永远只记得第一，李宗伟除外。</p>
 <p>马克思在《资本论》中指出：当利润达到50%时，资本会铤而走险；而为了100%的利润，资本甚至敢于践踏一切人间法律；如果利润达到300%，资本可能冒着绞首的危险去追求利益。</p>
 <p>由于潜在回报巨大，顶尖运动员在面对“受伤概率”时，表现出更高的风险偏好。他们愿意承担更大的身体损耗（成本），去博取那个极小的、但回报极高的胜利概率。既然已上赌桌，为何不赌把大的？</p>
-<h6 id="5、重复博弈中的“声誉机制”"><a href="#5、重复博弈中的“声誉机制”" class="headerlink" title="5、重复博弈中的“声誉机制”"></a>5、重复博弈中的“声誉机制”</h6><p>顶级赛事往往是重复博弈。运动员需要长期建立“可靠”、“坚韧”的声誉。 一旦因小伤退赛，可能会在后续的选拔、战术核心地位分配中失去信任。</p>
+<h6 id="5、重复博弈中的“声誉机制”"><a href="#5、重复博弈中的“声誉机制”" class="headerlink" title="5、重复博弈中的“声誉机制”"></a><font color="red">5、重复博弈中的“声誉机制”</font></h6><p>顶级赛事往往是重复博弈。运动员需要长期建立“可靠”、“坚韧”的声誉。 一旦因小伤退赛，可能会在后续的选拔、战术核心地位分配中失去信任。</p>
 <p>为了维护这种声誉资本，运动员会在单次博弈中选择“忍痛上场”，尽管这在生理上并非最优解。</p>
-<h4 id="二、总结"><a href="#二、总结" class="headerlink" title="二、总结"></a>二、总结</h4><p>从博弈论看，<font color="green">顶尖运动员的严重伤病问题，本质上是在高额激励下，个体理性选择导致的系统性风险累积。</font></p>
+<h4 id="二、总结"><a href="#二、总结" class="headerlink" title="二、总结"></a>二、总结</h4><p>从博弈论看，<font color="orange">顶尖运动员的严重伤病问题，本质上是在高额激励下，个体理性选择导致的系统性风险累积。</font></p>
 <ul>
 <li><p>对个人而言：这是在特定约束条件下（竞争压力、合同激励和约束、声誉需求&#x2F;绑架）的最优策略。</p>
 </li>
@@ -440,9 +279,9 @@
 <p>完善伤病保险，降低运动员对未来健康的担忧，使其敢于选择“保守策略”。</p>
 <p>这种“亡羊补牢”的举措从本质上并不能避免伤病的出现，只是事后诸葛亮而已，有好过没有。</p>
 <p>这也解释了为什么随着体育科学的发展和管理制度的完善（如更严格的脑震荡协议、轮休制度），现代顶尖运动员的生涯长度正在逐渐延长——因为博弈的规则和支付函数正在被重新设计。</p>
-<p>即便如此，<font color="red">只要人类还要争强好胜、争名夺利，这便是人性始然，就不会停止比赛，这种情况也就会一直延续下去，规则只能优化，无法取消，所以，对绝大多数人大概率仍是无解。</font></p>
+<p>即便如此，<font color="orange">只要人类还要争强好胜、争名夺利，这便是人性始然，就不会停止比赛，这种情况也就会一直延续下去，规则只能优化，无法取消，所以，对绝大多数人大概率仍是无解。</font></p>
 <p>明叔年轻时候也喜欢打羽毛球比赛，在公司年年冠军，后来代表公司参加罗湖区的比赛，越和高手打，就越容易受伤了。</p>
-<p>现在，明叔打羽毛球只为锻炼，即使偶尔所谓和人比个赛，既不会极限救球，也不计较输赢，有时候故意输给别人还更开心，因为，明叔明白了<font color="green">“细水常流”</font>的道理。</p>
+<p>现在，明叔打羽毛球只为锻炼，即使偶尔所谓和人比个赛，既不会极限救球，也不计较输赢，有时候故意输给别人还更开心，因为，明叔明白了<font color="orange">“细水常流”</font>的道理。</p>
 <br>
 
 <h6 id="【今日互动】"><a href="#【今日互动】" class="headerlink" title="【今日互动】"></a>【今日互动】</h6><p>如果有一个项目，有50%的概率可以赚1000万同时有50%的概率让你亏损20万的本金？——你会选择去做吗？</p>
@@ -454,560 +293,4 @@
 
 <p>希望你会喜欢，欢迎打赏鼓励。</p>
 <p>不喜欢就划走，缘起缘灭，道法自然。</p>
-
-                    
-                </div>
-
-                
-                        
-<div class="post-copyright-info-container border-box">
-    <div class="copyright-info-content border-box">
-        <div class="copyright-info-top border-box">
-            <div class="copyright-post-title border-box text-ellipsis">
-                用博弈论分析顶尖运动员个个伤病的原因
-            </div>
-
-            <div class="copyright-post-link border-box text-ellipsis">
-                2026/10/01/13/
-            </div>
-        </div>
-
-        <div class="copyright-info-bottom border-box">
-            <div class="copyright-post-author bottom-item">
-                <div class="type">
-                    作者
-                </div>
-                <div class="content">Benjamin Shao</div>
-            </div>
-
-            <div class="post-time bottom-item">
-                <div class="type">
-                    发布于
-                </div>
-                <div class="content">2026-10-01 10:00</div>
-            </div>
-
-
-            <div class="post-license bottom-item">
-                <div class="type">
-                    许可
-                </div>
-                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" target="_blank">
-                        
-                            <i class="fa-brands fa-creative-commons"></i>
-                            <i class="fa-brands fa-creative-commons-by"></i>
-                            <i class="fa-brands fa-creative-commons-nc"></i>
-                            <i class="fa-brands fa-creative-commons-sa"></i>
-                        
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <i class="copyright-bg fa-solid fa-copyright"></i>
-    </div>
-    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="复制版权信息" data-tooltip-offset-y="-2px">
-        <i class="fa-solid fa-copy"></i>
-    </div>
-</div>
-
-                
-
-                <div class="post-bottom-tags-and-share border-box">
-                    <div>
-                        
-                            <ul class="post-tags-box border-box">
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E8%BF%90%E5%8A%A8/">运动</a>
-                                    </li>
-                                
-                            </ul>
-                        
-                    </div>
-                    <div>
-                        
-                            <div class="post-share-container border-box">
-    <ul class="share-list-wrap border-box">
-        <li class="qq share-item border-box flex-center tooltip"
-            data-tooltip-content="分享到 QQ"
-        >
-            <i class="fa-brands fa-qq"></i>
-        </li>
-        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
-            data-tooltip-content="分享到微信"
-            data-tooltip-img-tip="微信扫一扫"
-            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
-        >
-            <i class="fa-brands fa-weixin"></i>
-        </li>
-        <li class="weibo share-item border-box flex-center tooltip"
-            data-tooltip-content="分享到微博"
-        >
-            <i class="fa-brands fa-weibo"></i>
-        </li>
-    </ul>
-</div>
-
-                        
-                    </div>
-                </div>
-
-                
-                    
-
-<div class="reward-author-container border-box flex-center">
-    <div class="reward-btn border-box flex-center tooltip tooltip-img"
-            data-tooltip-img-url="/images/wx&amp;zfb.png"
-            data-tooltip-img-trigger="click"
-            data-tooltip-img-style="top: -6px;"
-    >
-        <i class="fa-solid fa-gift"></i>&nbsp;请作者喝杯咖啡！
-    </div>
-</div>
-
-                
-
-                
-                    <div class="post-nav border-box">
-                        
-                            <div class="prev-post">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/2026/10/08/14/"
-                                   title="浅析C罗和热苏斯的信号博弈：千球执念与帅位保卫战"
-                                >
-                                    <span class="left arrow-icon flex-center">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">浅析C罗和热苏斯的信号博弈：千球执念与帅位保卫战</span>
-                                        <span class="post-nav-item">上一篇</span>
-                                    </span>
-                                </a>
-                            </div>
-                        
-                        
-                            <div class="next-post">
-                                <a class="next"
-                                   rel="next"
-                                   href="/2026/09/22/12/"
-                                   title="运动不能减肥，快乐运动也许可以"
-                                >
-                                    <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">运动不能减肥，快乐运动也许可以</span>
-                                        <span class="post-nav-item">下一篇</span>
-                                    </span>
-                                    <span class="right arrow-icon flex-center">
-                                        <i class="fas fa-chevron-right"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        
-                    </div>
-                
-
-                
-                    
-
-
-    <div class="comments-container border-box">
-        <div id="comments-anchor" class="comment-area-title border-box">
-            <i class="fas fa-comments"></i>&nbsp;评论
-        </div>
-        <div class="comment-plugin-fail border-box">
-    <span class="fail-tip">评论插件加载失败</span>
-    <button class="reload keep-button">点击重新加载</button>
-</div>
-<div class="comment-plugin-loading flex-center border-box">
-    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
-    <span class="load-tip">正在加载评论插件</span>
-</div>
-<script data-pjax>
-  window.KeepCommentPlugin = {}
-  window.KeepCommentPlugin.hideLoading = () => {
-    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
-    cplDom.style.display = 'none'
-  }
-  window.KeepCommentPlugin.loadFailHandle = () => {
-    window.KeepCommentPlugin.hideLoading()
-    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
-    cpfDom.style.display = 'flex'
-    cpfDom.querySelector('.reload').addEventListener('click', () => {
-      window.location.reload()
-    })
-  }
-</script>
-
-        
-            
-
-    <div class="giscus-comments-container">
-        <div class="giscus" id="giscus"></div>
-        <script 
-                onerror="window.KeepCommentPlugin.loadFailHandle()"
-        >
-          if (!window.KeepCommentPlugin?.getGiscusTheme) {
-            window.KeepCommentPlugin.getGiscusTheme = () => {
-              return document.documentElement.classList.contains('dark-mode') ? 'dark_dimmed' : 'light_tritanopia'
-            }
-          }
-
-          if (!window.KeepCommentPlugin?.changeGiscusTheme) {
-            window.KeepCommentPlugin.changeGiscusTheme = () => {
-              const iframe = document.querySelector('iframe.giscus-frame')
-              iframe && iframe.contentWindow.postMessage({
-                giscus: {
-                  setConfig: {
-                    theme: window.KeepCommentPlugin.getGiscusTheme()
-                  }
-                }
-              }, 'https://giscus.app')
-            }
-          }
-
-          if (!window.KeepCommentPlugin?.initGiscus) {
-            window.KeepCommentPlugin.initGiscus = () => {
-              const script = document.createElement('script')
-              script.async = true
-              script.src = 'https://giscus.app/client.js'
-              script.setAttribute('data-repo', 'coolcoldwind2025/coolcoldwind2025.github.io')
-              script.setAttribute('data-repo-id', 'R_kgDOUBEdig')
-              script.setAttribute('data-category', 'Announcements')
-              script.setAttribute('data-category-id', 'DIC_kwDOUBEdis4DD_e_')
-              script.setAttribute('data-reactions-enabled', '1')
-              script.setAttribute('data-lang', 'zh-CN')
-              script.setAttribute('data-mapping', 'pathname')
-              script.setAttribute('data-strict', '0')
-              script.setAttribute('data-emit-metadata', '0')
-              script.setAttribute('data-input-position', 'top')
-              script.setAttribute('crossorigin', 'anonymous')
-              script.setAttribute('loading', 'lazy')
-              script.setAttribute('data-theme', window.KeepCommentPlugin.getGiscusTheme())
-              document.querySelector('.giscus-comments-container').appendChild(script)
-              script.onerror = () => {
-                window.KeepCommentPlugin.loadFailHandle()
-              }
-              script.onload = () => {
-                window.KeepCommentPlugin.hideLoading()
-              }
-              const toggleThemeBtn = document.querySelector('.tool-toggle-theme-mode')
-              toggleThemeBtn && toggleThemeBtn.addEventListener('click', () => {
-                window.KeepCommentPlugin.changeGiscusTheme()
-              })
-            }
-          }
-
-          if ('false' === "true") {
-            setTimeout(() => {
-              window.KeepCommentPlugin.initGiscus()
-            }, 1000)
-          } else {
-            window.addEventListener("DOMContentLoaded", window.KeepCommentPlugin.initGiscus)
-          }
-        </script>
-    </div>
-
-
-        
-    </div>
-
-
-
-
-
-                
-            </div>
-        </div>
-
-        
-            <div class="pc-post-toc right-toc">
-                <div class="post-toc-wrap border-box">
-    <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%87%A0%E4%B8%AA%E7%BB%8F%E5%85%B8%E7%9A%84%E5%8D%9A%E5%BC%88%E5%9C%BA%E6%99%AF%EF%BC%9A"><span class="nav-text">一、几个经典的博弈场景：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1%E3%80%81%E5%9B%9A%E5%BE%92%E5%9B%B0%E5%A2%83%E4%B8%8E%E5%86%9B%E5%A4%87%E7%AB%9E%E8%B5%9B"><span class="nav-text">1、囚徒困境与军备竞赛</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2%E3%80%81%E5%A7%94%E6%89%98-%E4%BB%A3%E7%90%86%E7%9A%84%E5%88%A9%E7%9B%8A%E5%81%8F%E5%B7%AE"><span class="nav-text">2、委托-代理的利益偏差</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3%E3%80%81%E4%BF%A1%E5%8F%B7%E5%8D%9A%E5%BC%88"><span class="nav-text">3、信号博弈</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4%E3%80%81%E8%BE%B9%E9%99%85%E6%95%88%E7%94%A8%E9%80%92%E5%87%8F%E4%B8%8E%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD"><span class="nav-text">4、边际效用递减与风险偏好</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#5%E3%80%81%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88%E4%B8%AD%E7%9A%84%E2%80%9C%E5%A3%B0%E8%AA%89%E6%9C%BA%E5%88%B6%E2%80%9D"><span class="nav-text">5、重复博弈中的“声誉机制”</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%80%BB%E7%BB%93"><span class="nav-text">二、总结</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%A0%B4%E5%B1%80%E6%80%9D%E8%B7%AF%EF%BC%88%E5%A6%82%E6%9E%9C%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AF%9D%EF%BC%89%EF%BC%9A"><span class="nav-text">三、破局思路（如果存在的话）：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E3%80%90%E4%BB%8A%E6%97%A5%E4%BA%92%E5%8A%A8%E3%80%91"><span class="nav-text">【今日互动】</span></a></li></ol></li></ol>
-    </div>
-</div>
-
-            </div>
-        
-    </div>
-</div>
-
-
-                
-            </div>
-        </div>
-
-        <div class="page-main-content-bottom border-box">
-            
-<footer class="footer border-box">
-    <div class="copyright-info info-item">
-    &copy;&nbsp;2026
-    
-            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Benjamin Shao</a>
-        
-    </div>
-
-    <div class="theme-info info-item">
-        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
-    </div>
-
-    
-
-    
-        <div class="count-info info-item">
-            
-
-            
-                <span class="count-item border-box uv">
-                    <span class="item-type border-box">访客数</span>
-                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
-                </span>
-            
-
-            
-                <span class="count-item border-box pv">
-                    <span class="item-type border-box">访问量</span>
-                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
-                </span>
-            
-        </div>
-    
-
-    
-</footer>
-
-        </div>
-    </div>
-
-    <!-- post tools -->
-    
-        <div class="post-tools right-toc">
-            <div class="post-tools-container border-box">
-    <ul class="post-tools-list border-box">
-        <!-- PC encrypt again -->
-        
-
-        <!-- PC TOC show toggle -->
-        
-            <li class="tools-item flex-center toggle-show-toc">
-                <i class="fas fa-list"></i>
-            </li>
-        
-
-        <!-- PC go comment -->
-        
-            <li class="tools-item flex-center go-to-comments">
-                <i class="fas fa-comment"></i>
-                <span class="post-comments-count"></span>
-            </li>
-        
-
-        <!-- PC full screen -->
-        <li class="tools-item flex-center full-screen">
-            <i class="fa-solid fa-expand"></i>
-        </li>
-    </ul>
-</div>
-
-        </div>
-    
-
-    <!-- side tools -->
-    <div class="side-tools">
-        <div class="side-tools-container border-box ">
-    <ul class="side-tools-list side-tools-show-handle border-box">
-        <li class="tools-item tool-font-adjust-plus flex-center">
-            <i class="fas fa-search-plus"></i>
-        </li>
-
-        <li class="tools-item tool-font-adjust-minus flex-center">
-            <i class="fas fa-search-minus"></i>
-        </li>
-
-        <!-- toggle mode -->
-        
-            <li class="tools-item tool-toggle-theme-mode flex-center">
-                <i class="fas fa-moon"></i>
-            </li>
-        
-
-        <!-- rss -->
-        
-
-        <!-- to bottom -->
-        <li class="tools-item tool-scroll-to-bottom flex-center">
-            <i class="fas fa-arrow-down"></i>
-        </li>
-    </ul>
-
-    <ul class="exposed-tools-list border-box">
-        
-            <li class="tools-item toggle-show-toc-tablet flex-center">
-                <i class="fas fa-list"></i>
-            </li>
-        
-
-        
-            <li class="tools-item go-to-comments-tablet flex-center">
-                <i class="fas fa-comment"></i>
-            </li>
-        
-
-        <li class="tools-item tool-toggle-show flex-center">
-            <i class="fas fa-cog fa-spin"></i>
-        </li>
-
-        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
-            <i class="arrow fas fa-arrow-up"></i>
-            <span class="percent"></span>
-        </li>
-    </ul>
-</div>
-
-    </div>
-
-    <!-- image mask -->
-    <div class="zoom-in-image-mask">
-    <img class="zoom-in-image">
-</div>
-
-
-    <!-- local search -->
-    
-        <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-          <span class="search-input-field-pre">
-            <i class="fas fa-keyboard"></i>
-          </span>
-            <div class="search-input-container">
-                <input autocomplete="off"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       placeholder="搜索..."
-                       spellcheck="false"
-                       type="search"
-                       class="search-input"
-                >
-            </div>
-            <span class="close-popup-btn">
-                <i class="fas fa-times"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
-
-    
-
-    <!-- tablet toc -->
-    
-        <div class="tablet-post-toc-mask">
-            <div class="tablet-post-toc">
-                <div class="post-toc-wrap border-box">
-    <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%87%A0%E4%B8%AA%E7%BB%8F%E5%85%B8%E7%9A%84%E5%8D%9A%E5%BC%88%E5%9C%BA%E6%99%AF%EF%BC%9A"><span class="nav-text">一、几个经典的博弈场景：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1%E3%80%81%E5%9B%9A%E5%BE%92%E5%9B%B0%E5%A2%83%E4%B8%8E%E5%86%9B%E5%A4%87%E7%AB%9E%E8%B5%9B"><span class="nav-text">1、囚徒困境与军备竞赛</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2%E3%80%81%E5%A7%94%E6%89%98-%E4%BB%A3%E7%90%86%E7%9A%84%E5%88%A9%E7%9B%8A%E5%81%8F%E5%B7%AE"><span class="nav-text">2、委托-代理的利益偏差</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3%E3%80%81%E4%BF%A1%E5%8F%B7%E5%8D%9A%E5%BC%88"><span class="nav-text">3、信号博弈</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4%E3%80%81%E8%BE%B9%E9%99%85%E6%95%88%E7%94%A8%E9%80%92%E5%87%8F%E4%B8%8E%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD"><span class="nav-text">4、边际效用递减与风险偏好</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#5%E3%80%81%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88%E4%B8%AD%E7%9A%84%E2%80%9C%E5%A3%B0%E8%AA%89%E6%9C%BA%E5%88%B6%E2%80%9D"><span class="nav-text">5、重复博弈中的“声誉机制”</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%80%BB%E7%BB%93"><span class="nav-text">二、总结</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%A0%B4%E5%B1%80%E6%80%9D%E8%B7%AF%EF%BC%88%E5%A6%82%E6%9E%9C%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AF%9D%EF%BC%89%EF%BC%9A"><span class="nav-text">三、破局思路（如果存在的话）：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E3%80%90%E4%BB%8A%E6%97%A5%E4%BA%92%E5%8A%A8%E3%80%91"><span class="nav-text">【今日互动】</span></a></li></ol></li></ol>
-    </div>
-</div>
-
-            </div>
-        </div>
-    
-</main>
-
-
-
-
-
-<!-- common js -->
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/header-shrink.js"></script>
-
-<script src="/js/back2top.js"></script>
-
-<script src="/js/toggle-theme.js"></script>
-
-<script src="/js/code-block.js"></script>
-
-<script src="/js/main.js"></script>
-
-<script src="/js/libs/anime.min.js"></script>
-
-
-<!-- local search -->
-
-    
-<script src="/js/local-search.js"></script>
-
-
-
-<!-- lazyload -->
-
-    
-<script src="/js/lazyload.js"></script>
-
-
-
-<div class="">
-    <!-- home page -->
-    
-
-    <!-- post page -->
-    
-        <!-- post-helper -->
-        
-<script src="/js/post/post-helper.js"></script>
-
-
-        <!-- toc -->
-        
-            
-<script src="/js/post/toc.js"></script>
-
-        
-
-        <!-- copyright-info -->
-        
-            
-<script src="/js/post/copyright-info.js"></script>
-
-        
-
-        <!-- share -->
-        
-            
-<script src="/js/post/share.js"></script>
-
-        
-    
-
-    <!-- categories page -->
-    
-
-    <!-- links page -->
-    
-
-    <!-- photos page -->
-    
-
-    <!-- tools page -->
-    
-</div>
-
-<!-- mermaid -->
-
-
-<!-- pjax -->
-
-
-
-</body>
-</html>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://benjaminshao.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://benjaminshao.com/2026/10/01/13/">https://benjaminshao.com/2026/10/01/13/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://benjaminshao.com" target="_blank">Hexo</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BF%90%E5%8A%A8/">运动</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/10/08/14/" title="浅析C罗和热苏斯的信号博弈：千球执念与帅位保卫战"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">浅析C罗和热苏斯的信号博弈：千球执念与帅位保卫战</div></div><div class="info-2"><div class="info-item-1">如果你认为足球只是22个人在草地上追逐一个皮球，那你可能还没看透这项运动的本质。  2026年秋天，葡萄牙国家队上演了一出比世界杯决赛还要精彩的“内部大戏”——41岁的克里斯蒂亚诺·罗纳尔多与新任主帅若热·热苏斯之间展开了一场经典的信号博弈。 这场博弈的核心不是战术分歧，而是两个看似不相干的目标之间的碰撞：C罗要攒够1000个生涯进球，而热苏斯要保住自己刚刚到手的国家队教鞭。 博弈的参与者信息并不对称让我们先用博弈论的框架拆解一下局面。在这个双人博弈中： 发送者（C罗）：他距离职业生涯1000球仅差21球（截至2026年9月数据为979球），且明确表示希望第1000球在国家队打进。这不仅是数字游戏，更是“生涯完整性”的象征。  接收者（热苏斯）：他不知道C罗的真实动机是纯粹为了纪录，还是借此争夺主力位置；也不知道如果不让C罗上场，会引发多大的舆论风暴。  有趣的是，两人并非陌生人。 热苏斯曾在沙特利雅得胜利执教过C罗一个赛季，还帮他赢得了沙特联赛冠军。按说这段“前师徒情谊”应该成为润滑剂，但现实恰恰相反——曾经的亲密反而放大了现在的矛盾。这在博弈论中被称为“历史包袱效应”：过去的...</div></div></div></a><a class="pagination-related" href="/2026/09/22/12/" title="运动不能减肥，快乐运动也许可以"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">运动不能减肥，快乐运动也许可以</div></div><div class="info-2"><div class="info-item-1">这是一个关于“策略选择”与“长期均衡”的有趣视角。我不讲能量差，不讲蛋白质消耗与补充，而是将减肥看作一场你与身体、欲望以及时间之间的博弈。  你想减肥，去咨询营养师和营养医师，他们百分百会告诉你：管住嘴、迈开腿，还可能说跑步是最好的运动。于是乎，你立志从第二天起就开始晨跑或夜跑。但不久后你就发现：早起太难，夜跑太累，最终没坚持几天就放弃了。 而明叔一般会给你什么样的建议呢？我会说：挑你最喜欢的运动，在最舒适的条件下去享受运动的快乐。 这两者有区别吗？有，且有很大的区别。   一、 传统运动的“囚徒困境”：为什么你会输？在经典的减肥叙事中，运动被视为一种必须支付的“成本”。你和大多数人一样，都会把减肥看作一个单轮博弈，你的策略空间只有两个选项：“痛苦坚持”或“放弃躺平”。 这里存在一个典型的负向反馈循环：  高成本投入：传统观念强调“自律即自由”，要求你进行高强度、枯燥甚至痛苦的训练（如强制跑步、节食）。这在博弈论中相当于极高的“行动成本”。 即时收益为负：运动带来的多巴胺分泌往往滞后，而当下的感受是疲劳、饥饿和痛苦。 理性背叛：作为理性人，你的大脑会不断计算“边际效用”。当痛苦超...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/09/22/12/" title="运动不能减肥，快乐运动也许可以"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-22</div><div class="info-item-2">运动不能减肥，快乐运动也许可以</div></div><div class="info-2"><div class="info-item-1">这是一个关于“策略选择”与“长期均衡”的有趣视角。我不讲能量差，不讲蛋白质消耗与补充，而是将减肥看作一场你与身体、欲望以及时间之间的博弈。  你想减肥，去咨询营养师和营养医师，他们百分百会告诉你：管住嘴、迈开腿，还可能说跑步是最好的运动。于是乎，你立志从第二天起就开始晨跑或夜跑。但不久后你就发现：早起太难，夜跑太累，最终没坚持几天就放弃了。 而明叔一般会给你什么样的建议呢？我会说：挑你最喜欢的运动，在最舒适的条件下去享受运动的快乐。 这两者有区别吗？有，且有很大的区别。   一、 传统运动的“囚徒困境”：为什么你会输？在经典的减肥叙事中，运动被视为一种必须支付的“成本”。你和大多数人一样，都会把减肥看作一个单轮博弈，你的策略空间只有两个选项：“痛苦坚持”或“放弃躺平”。 这里存在一个典型的负向反馈循环：  高成本投入：传统观念强调“自律即自由”，要求你进行高强度、枯燥甚至痛苦的训练（如强制跑步、节食）。这在博弈论中相当于极高的“行动成本”。 即时收益为负：运动带来的多巴胺分泌往往滞后，而当下的感受是疲劳、饥饿和痛苦。 理性背叛：作为理性人，你的大脑会不断计算“边际效用”。当痛苦超...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">John Doe</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%87%A0%E4%B8%AA%E7%BB%8F%E5%85%B8%E7%9A%84%E5%8D%9A%E5%BC%88%E5%9C%BA%E6%99%AF%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">一、几个经典的博弈场景：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1%E3%80%81%E5%9B%9A%E5%BE%92%E5%9B%B0%E5%A2%83%E4%B8%8E%E5%86%9B%E5%A4%87%E7%AB%9E%E8%B5%9B"><span class="toc-number">1.1.</span> <span class="toc-text">1、囚徒困境与军备竞赛</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2%E3%80%81%E5%A7%94%E6%89%98-%E4%BB%A3%E7%90%86%E7%9A%84%E5%88%A9%E7%9B%8A%E5%81%8F%E5%B7%AE"><span class="toc-number">1.2.</span> <span class="toc-text">2、委托-代理的利益偏差</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3%E3%80%81%E4%BF%A1%E5%8F%B7%E5%8D%9A%E5%BC%88"><span class="toc-number">1.3.</span> <span class="toc-text">3、信号博弈</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4%E3%80%81%E8%BE%B9%E9%99%85%E6%95%88%E7%94%A8%E9%80%92%E5%87%8F%E4%B8%8E%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD"><span class="toc-number">1.4.</span> <span class="toc-text">4、边际效用递减与风险偏好</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5%E3%80%81%E9%87%8D%E5%A4%8D%E5%8D%9A%E5%BC%88%E4%B8%AD%E7%9A%84%E2%80%9C%E5%A3%B0%E8%AA%89%E6%9C%BA%E5%88%B6%E2%80%9D"><span class="toc-number">1.5.</span> <span class="toc-text">5、重复博弈中的“声誉机制”</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-number">2.</span> <span class="toc-text">二、总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%A0%B4%E5%B1%80%E6%80%9D%E8%B7%AF%EF%BC%88%E5%A6%82%E6%9E%9C%E5%AD%98%E5%9C%A8%E7%9A%84%E8%AF%9D%EF%BC%89%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">三、破局思路（如果存在的话）：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E3%80%90%E4%BB%8A%E6%97%A5%E4%BA%92%E5%8A%A8%E3%80%91"><span class="toc-number">3.1.</span> <span class="toc-text">【今日互动】</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/18/18/" title="人生博弈通关指南：内外双维解码六阶博弈框架">人生博弈通关指南：内外双维解码六阶博弈框架</a><time datetime="2026-10-18T10:00:00.000Z" title="发表于 2026-10-18 18:00:00">2026-10-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/18/17/" title="博弈论的核心术语一之“策略”">博弈论的核心术语一之“策略”</a><time datetime="2026-10-18T02:00:00.000Z" title="发表于 2026-10-18 10:00:00">2026-10-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/16/16/" title="不擅长经营关系，如何做一个好的管理者？">不擅长经营关系，如何做一个好的管理者？</a><time datetime="2026-10-16T02:00:00.000Z" title="发表于 2026-10-16 10:00:00">2026-10-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/12/15/" title="你的体重不是数字，是你和身体谈判的结果">你的体重不是数字，是你和身体谈判的结果</a><time datetime="2026-10-12T02:00:00.000Z" title="发表于 2026-10-12 10:00:00">2026-10-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/08/14/" title="浅析C罗和热苏斯的信号博弈：千球执念与帅位保卫战">浅析C罗和热苏斯的信号博弈：千球执念与帅位保卫战</a><time datetime="2026-10-08T02:00:00.000Z" title="发表于 2026-10-08 10:00:00">2026-10-08</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By John Doe</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.7.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.0"></script><script src="/js/main.js?v=5.7.0"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
